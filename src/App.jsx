@@ -73,22 +73,22 @@ const stackGroups = [
 
 const photos = [
   {
-    src: '/images/robotics.svg',
+    src: '/images/robotics.png',
     alt: 'Robotics project photo placeholder',
     label: 'Robotics',
-    caption: 'Drop in a competition, CAD, or build photo here.',
+    caption: '2026 California VEX State Championship CAD - 7700R',
   },
   {
-    src: '/images/ai.svg',
+    src: '/images/ai.png',
     alt: 'AI project photo placeholder',
     label: 'AI / Software',
-    caption: 'Use this slot for model visualizations, demos, or UI shots.',
+    caption: 'Neural network used for DetectFaceAI.',
   },
   {
-    src: '/images/hardware.svg',
+    src: '/images/hardware.png',
     alt: 'Hardware project photo placeholder',
     label: 'Hardware',
-    caption: 'Show manufacturing, prototyping, or mechanical details.',
+    caption: 'Custom made augmented reality glasses.',
   },
 ];
 
@@ -317,11 +317,7 @@ function App() {
               <div className="portrait-ring portrait-ring-one" />
               <div className="portrait-ring portrait-ring-two" />
               <div className="portrait-card">
-                <img src="/images/profile.svg" alt="Profile photo placeholder for Josh Roe" />
-                <div className="portrait-overlay">
-                  <span>PHOTO SLOT</span>
-                  <p>Replace this with your favorite portrait.</p>
-                </div>
+                <img src="/images/profile.PNG" alt="Profile photo placeholder for Josh Roe" />
               </div>
               <div className="floating-code floating-code-a">C++</div>
               <div className="floating-code floating-code-b">AI</div>
@@ -347,7 +343,7 @@ function App() {
               <span className="card-index">A</span>
               <h3>First-principles engineering</h3>
               <p>
-                I’m most interested in projects where I can understand the full chain: input data, algorithms, control logic, code architecture, electronics, mechanical constraints, testing, and iteration.
+                I’m most interested in projects where I can understand the full chain: input data, algorithms, control logic, code architecture, electronics, constraints, testing, and iteration.
               </p>
               <div className="mini-diagram" aria-hidden="true">
                 <span>01</span><i />
@@ -360,13 +356,13 @@ function App() {
             <TiltCard className="about-card">
               <span className="card-index">B</span>
               <h3>Software</h3>
-              <p>Algorithms, interfaces, model training, autonomous systems, tooling, and data pipelines.</p>
+              <p>I enjoy software and ML engineering through algorithms, interfaces, model training, autonomous systems, tooling, and data pipelines.</p>
             </TiltCard>
 
             <TiltCard className="about-card">
               <span className="card-index">C</span>
               <h3>Hardware</h3>
-              <p>CAD, mechanisms, manufacturing constraints, sensors, actuators, integration, and testing.</p>
+              <p>Making projects hands-on is a priority for me. CAD, mechanisms, manufacturing constraints, sensors, actuators, integration, and testing are essential parts of my workflow.</p>
             </TiltCard>
           </div>
         </section>
