@@ -672,3 +672,40 @@
     animation: none;
   }
 }
+
+
+/* ---------- HCU logo ---------- */
+.hcu-brand {
+  width: clamp(92px, 12vw, 150px);
+  margin: 0 0 22px;
+}
+
+.hcu-brand img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: invert(1) brightness(1.8) drop-shadow(0 0 18px rgba(139, 216, 255, 0.16));
+  mix-blend-mode: screen;
+  opacity: 0.96;
+}
+
+/* ---------- MPC gallery video ---------- */
+.photo-card .video-frame {
+  padding: 18px 18px 92px;
+}
+
+.photo-card .video-frame .gallery-media {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  aspect-ratio: 240 / 113;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 16px;
+}
+
+@media (max-width: 760px) {
+  .photo-card .video-frame {
+    padding: 14px 14px 96px;
+  }
+}

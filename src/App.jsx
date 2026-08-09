@@ -175,9 +175,9 @@ const photos = [
     type: 'video',
     src: '/videos/ai.mp4',
     poster: '/images/ai.png',
-    alt: 'Looping DetectFaceAI software and neural-network visualization',
-    label: 'AI / Software',
-    caption: 'DetectFaceAI development, model visualization, and software workflow.',
+    alt: 'Looping model predictive control path-following simulation',
+    label: 'MPC Path Following',
+    caption: 'Model Predictive Control simulation optimizing steering and velocity over a receding horizon to follow a planned path.',
   },
   {
     type: 'image',
@@ -632,6 +632,9 @@ function App() {
           <div className="hcu-card" data-reveal>
             <div className="hcu-glow" aria-hidden="true" />
             <div className="hcu-copy">
+              <div className="hcu-brand" aria-label="HCU Technologies logo">
+                <img src="/images/hcu-logo.png" alt="HCU Technologies" />
+              </div>
               <span className="section-kicker">04 / HCU TECHNOLOGIES</span>
               <p className="hcu-role">Founder & CEO</p>
               <h2>Robotics hardware designed around real competition constraints.</h2>
@@ -708,7 +711,7 @@ function App() {
           <SectionHeading
             kicker="06 / GALLERY"
             title="Engineering in practice."
-            copy="A few snapshots from the work itself: competition robotics and CAD, neural-network architecture, and custom hardware prototyping."
+            copy="A few snapshots from the work itself: competition robotics and CAD, model-predictive-control path following, and custom hardware prototyping."
           />
 
           <div className="gallery-grid">
@@ -749,7 +752,12 @@ function App() {
               I’m always interested in technical projects, engineering opportunities, research, startups, and conversations with people building difficult things.
             </p>
             <div className="contact-actions">
-              <a className="button button-primary" href="mailto:joshroe@berkeley.edu">
+              <a
+                className="button button-primary"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=joshroe@berkeley.edu&su=Portfolio%20Contact"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <MailIcon /> Email me
               </a>
             </div>
