@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#122338"/>
+      <stop offset=".58" stop-color="#0b1521"/>
+      <stop offset="1" stop-color="#15142c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1200" fill="url(#g)"/>
+  <g stroke="#8bd8ff" stroke-opacity=".2" fill="none" stroke-width="2">
+    <path d="M140 830h720M190 830l70-350h470l80 350M285 480l60-125h310l75 125"/>
+    <circle cx="290" cy="845" r="90"/><circle cx="710" cy="845" r="90"/>
+    <path d="M370 590h260v165H370zM500 355v-130M440 225h120"/>
+  </g>
+  <g fill="#8bd8ff" fill-opacity=".1">
+    <rect x="370" y="590" width="260" height="165" rx="22"/>
+    <circle cx="290" cy="845" r="54"/><circle cx="710" cy="845" r="54"/>
+  </g>
+  <text x="500" y="1050" text-anchor="middle" fill="#8bd8ff" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="7">ROBOTICS PHOTO</text>
+</svg>
