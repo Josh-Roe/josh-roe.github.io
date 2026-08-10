@@ -231,7 +231,7 @@ function InstagramIcon() {
     <svg viewBox="0 0 24 24" aria-hidden="true" className="brand-icon">
       <rect x="3" y="3" width="18" height="18" rx="5" />
       <circle cx="12" cy="12" r="4.2" />
-      <circle cx="17.5" cy="6.5" r="1" className="fill-dot" />
+      <circle cx="17.5" cy="6.5" r="1" className="fill-dot" />https://josh-roe.github.io/
     </svg>
   );
 }
@@ -645,7 +645,7 @@ function App() {
               <div className="hcu-actions">
                 <a
                   className="button button-primary"
-                  href="https://hcu-tech.square.site/about"
+                  href="https://hcu-tech.org"
                   target="_blank"
                   rel="noreferrer"
                 >
