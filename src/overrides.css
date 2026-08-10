@@ -709,3 +709,18 @@
     padding: 14px 14px 96px;
   }
 }
+
+.email-contact-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.email-contact-note {
+  padding-left: 3px;
+  color: #7890a5;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}

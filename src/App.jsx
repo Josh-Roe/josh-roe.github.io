@@ -753,14 +753,20 @@ function App() {
               I’m always interested in technical projects, engineering opportunities, research, startups, and conversations with people building difficult things.
             </p>
             <div className="contact-actions">
-              <a
-                className="button button-primary"
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=joshroe@berkeley.edu&su=Portfolio%20Contact"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <MailIcon /> Email me
-              </a>
+              <div className="email-contact-block">
+                <a
+                  className="button button-primary"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=joshroe@berkeley.edu&su=Portfolio%20Contact"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <MailIcon /> Email me
+                </a>
+
+                <span className="email-contact-note">
+                  joshroe@berkeley.edu
+                </span>
+              </div>
             </div>
 
             <div className="social-directory">
