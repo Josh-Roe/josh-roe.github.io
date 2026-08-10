@@ -7,6 +7,7 @@ const navItems = [
   ['experience', 'Experience'],
   ['hcu', 'HCU Tech'],
   ['stack', 'Stack'],
+  ['gallery', 'Gallery'],
   ['contact', 'Contact'],
 ];
 
