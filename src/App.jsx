@@ -50,8 +50,9 @@ const projects = [
     title: 'Autonomous Collision Avoidance',
     meta: '2024 – 2025',
     summary:
-      'A simulated vehicle safety system combining SSD object detection, the Dynamic Window Approach, and Model Predictive Control. Placed 3rd in its science fair category.',
-    stack: 'C++, Qt',
+      'A vehicle safety system on a VEX robot, combining SSD object detection, the Dynamic Window Approach, and Model Predictive Control. Validated in simulations and physical tests, avoiding 98% of obstacles over 50 trials. Built with Connor Lee. Placed 3rd in its science fair category.',
+    stack: 'C++, PROS, Qt, TensorFlow',
+    href: `${GITHUB}/MPC`,
     video: '/videos/ai.mp4',
     poster: '/images/ai.png',
     alt: 'Model Predictive Control simulation following a planned path',
