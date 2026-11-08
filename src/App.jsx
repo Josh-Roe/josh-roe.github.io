@@ -4,65 +4,68 @@ const GITHUB = 'https://github.com/Josh-Roe';
 
 const projects = [
   {
-    title: 'CalSpork',
-    meta: '2026 – present · Private repository',
-    summary:
-      'An independent UC Berkeley dining app for iOS, Android, and web. It recommends dining halls with a LinUCB contextual bandit that learns from meal ratings, and identifies meals from photos using Grounding DINO and SigLIP2 with menu-constrained matching.',
-    stack: 'Python, FastAPI, PostgreSQL, TypeScript, React Native (Expo)',
-  },
-  {
     title: 'AR Smart Glasses',
-    meta: '2025 – 2026',
+    meta: 'Oct 2025 – Feb 2026',
+    award: '3rd place, Robotics & Intelligent Machines',
     summary:
-      'Custom augmented-reality glasses for home accessibility, integrating waveguide displays, sensors, and 3D-printed hardware. I optimized YOLOv8n with TensorFlow Lite for real-time object recognition at about 121 ms system latency. Placed 3rd in its science fair category.',
-    stack: 'YOLOv8n, TensorFlow Lite, Android Studio, CAD',
+      'Custom augmented-reality glasses for home accessibility, integrating waveguide displays, sensors, and 3D-printed hardware. I optimized YOLOv8n with TensorFlow Lite for real-time object recognition at about 121 ms system latency.',
+    stack: ['YOLOv8n', 'TensorFlow Lite', 'Android Studio', 'CAD'],
     href: `${GITHUB}/AR-Smart-Glasses-Home-Applications`,
     image: '/images/glasses.jpg',
     alt: 'Yellow 3D-printed AR glasses with exposed electronics',
   },
   {
-    title: 'Decoder-Only Small Language Model',
-    meta: 'In progress',
-    summary:
-      'A small transformer built end to end to understand how language models work: tokenization, embeddings, causal multi-head attention, training, and text generation. It uses an 8K vocabulary, 4 attention heads, and 3 transformer layers.',
-    stack: 'Python, Transformers',
-    href: `${GITHUB}/Dec-Only-SLM-Model`,
-  },
-  {
-    title: 'DetectFaceAI',
-    meta: '2026',
-    summary:
-      'A 256–16–3 neural network written in pure Python with no ML libraries, including backpropagation and stochastic gradient descent. It reached 85% held-out accuracy classifying hand-drawn facial expressions. Built with Keily Huang.',
-    stack: 'Python, Tkinter',
-    href: `${GITHUB}/DetectFaceAI`,
-  },
-  {
-    title: '7700R Worlds Robot',
-    meta: '2025 – 2026',
-    summary:
-      'A VEX World Championship robot designed and programmed for the Push Back season. I worked on the CAD, mechanical design, autonomous software, odometry, and motion control. It went 10⁠–⁠2 at Worlds.',
-    stack: 'C++, PROS, LemLib, Autodesk Inventor',
-    href: `${GITHUB}/7700R-WORLDS-ROBOT-2026`,
-    image: '/images/robot.jpg',
-    alt: 'CAD render of the 7700R competition robot',
-  },
-  {
     title: 'Autonomous Collision Avoidance',
-    meta: '2024 – 2025',
+    meta: 'Oct 2024 – Feb 2025 · with Connor Lee',
+    award: '3rd place, Robotics & Intelligent Machines',
     summary:
-      'A vehicle safety system on a VEX robot, combining SSD object detection, the Dynamic Window Approach, and Model Predictive Control. Validated in simulations and physical tests, avoiding 98% of obstacles over 50 trials. Built with Connor Lee. Placed 3rd in its science fair category.',
-    stack: 'C++, PROS, Qt, TensorFlow',
+      'A vehicle safety system on a VEX robot combining SSD object detection, the Dynamic Window Approach, and Model Predictive Control. Validated in simulations and physical tests, avoiding 98% of obstacles over 50 trials.',
+    stack: ['C++', 'PROS', 'Qt', 'TensorFlow'],
     href: `${GITHUB}/MPC`,
     video: '/videos/ai.mp4',
     poster: '/images/ai.png',
     alt: 'Model Predictive Control simulation following a planned path',
   },
+  {
+    title: '7700R Worlds Robot',
+    meta: '2025 – 2026',
+    award: '10–2 at the VEX World Championship',
+    summary:
+      'A VEX World Championship robot designed and programmed for the Push Back season. I worked on the CAD, mechanical design, autonomous software, odometry, and motion control.',
+    stack: ['C++', 'PROS', 'LemLib', 'Autodesk Inventor'],
+    href: `${GITHUB}/7700R-WORLDS-ROBOT-2026`,
+    image: '/images/robot.jpg',
+    alt: 'CAD render of the 7700R competition robot',
+  },
+  {
+    title: 'CalSpork',
+    meta: '2026 – present · Private repository',
+    summary:
+      'An independent UC Berkeley dining app for iOS, Android, and web. It recommends dining halls with a LinUCB contextual bandit that learns from meal ratings, and identifies meals from photos using Grounding DINO and SigLIP2 with menu-constrained matching.',
+    stack: ['Python', 'FastAPI', 'PostgreSQL', 'React Native'],
+  },
+  {
+    title: 'Decoder-Only Small Language Model',
+    meta: 'In progress',
+    summary:
+      'A small transformer built end to end to understand how language models work: tokenization, embeddings, causal multi-head attention, training, and text generation.',
+    stack: ['Python', 'Transformers'],
+    href: `${GITHUB}/Dec-Only-SLM-Model`,
+  },
+  {
+    title: 'DetectFaceAI',
+    meta: '2026 · with Keily Huang',
+    summary:
+      'A 256–16–3 neural network written in pure Python with no ML libraries, including backpropagation and stochastic gradient descent. It reached 85% held-out accuracy classifying hand-drawn facial expressions.',
+    stack: ['Python', 'Tkinter'],
+    href: `${GITHUB}/DetectFaceAI`,
+  },
 ];
 
 const otherProjects = [
+  { title: '8-Bit Transistor CPU', note: 'An arithmetic datapath built from discrete NPN transistors.', href: 'https://github.com/gcgoodwin/CPU' },
   { title: '7700R Push Back Code', note: 'Competition C++ with RAMSETE, LTV unicycle control, and PID.', href: `${GITHUB}/7700R-Push-Back-Code` },
-  { title: 'AI Diabetes Model', note: 'TensorFlow classifier in a JavaFX desktop app with Arduino serial input.', href: `${GITHUB}/AIDiabetesModel` },
-  { title: '8-Bit Transistor CPU', note: 'Team project: an arithmetic datapath built from discrete NPN transistors.', href: 'https://github.com/gcgoodwin/CPU' },
+  { title: 'AI Diabetes Model', note: 'TensorFlow classifier in a JavaFX app with Arduino serial input.', href: `${GITHUB}/AIDiabetesModel` },
   { title: 'ESP-DL Fork', note: 'Embedded ML experiments on ESP32-S3.', href: `${GITHUB}/ESP-DL-Project-Fork` },
   { title: '7700R Worlds Robot 2025', note: 'CAD archive of the 2025 World Championship robot.', href: `${GITHUB}/7700R-WORLDS-ROBOT-2025` },
   { title: 'Epitrochoid Derivation', note: 'Calculus animation made with Python and Manim.', href: `${GITHUB}/Manim-Epitrochoid-Derivation` },
@@ -70,62 +73,75 @@ const otherProjects = [
 
 const experience = [
   {
-    role: 'Founder',
-    org: 'HCU Technologies',
-    href: 'https://hcu-tech.org',
-    period: '2025 – present',
-    detail: 'Robotics hardware company that has supplied 30,000+ precision parts to 100+ teams worldwide and generated $10,000+ in revenue.',
+    role: 'Electrical Team Member',
+    org: 'UAVs@Berkeley',
+    period: 'Sep 2026 – present',
+    detail: 'Designed a 4-layer STM32G431 flight controller PCB in KiCad and now developing FPGA acceleration for ORB feature extraction.',
   },
   {
-    role: 'Summer Camp Instructor',
-    org: 'Rolling Robots',
-    period: 'Summer 2026',
-    detail: 'Taught C++, autonomous programming, PID control, and CAD to students in grades 1–8.',
+    role: 'Accumulator EE',
+    org: 'Formula Electric at Berkeley',
+    period: 'Aug 2026 – present',
+    detail: 'Designed a battery management PCB for a 6S3P segment with cell-voltage sensing, temperature monitoring, passive balancing, and isolated CAN.',
+  },
+  {
+    role: 'Co-Founder',
+    org: 'Hardware for Community Uplift',
+    href: 'https://hcu-tech.org',
+    period: 'Jun 2025 – present',
+    detail: 'Robotics hardware company that has supplied 30,000+ precision parts to 100+ teams worldwide and generated $10,000+ in revenue.',
   },
   {
     role: 'Head Engineer & Programmer',
     org: 'VEX Robotics Team 7700R',
-    period: '2016 – 2026',
+    period: 'Aug 2016 – Jul 2026',
     detail: 'Developed autonomous navigation, sensor fusion, and localization in C++. Ranked 11th worldwide in the 2025 VEX World Skills standings.',
-  },
-  {
-    role: 'Head Captain',
-    org: 'Technology Student Association',
-    period: '2022 – 2026',
-    detail: 'Captained the team that placed 2nd nationally in the 2025 TEAMS Build & Design challenge.',
   },
   {
     role: 'Machine Learning Engineering Intern',
     org: 'MAC Italia',
-    period: 'Summer 2024',
+    period: 'Jun – Jul 2024',
     detail: 'Researched ML methods for identifying household appliances from electrical data and explored deployment on ESP32-S3 microcontrollers.',
   },
 ];
 
 const skills = [
-  ['Languages', 'Python, C++, C, Java, JavaScript'],
-  ['Machine learning', 'TensorFlow, PyTorch, scikit-learn, YOLO, ONNX, computer vision'],
-  ['Robotics', 'Control systems, PID, Model Predictive Control, localization, path planning'],
-  ['Embedded', 'ESP32-S3, ESP-IDF, Arduino, Raspberry Pi'],
-  ['CAD', 'Onshape, Autodesk Inventor, Autodesk Fusion 360'],
+  ['Electrical & Hardware', ['KiCad', 'PCB layout', 'STM32', 'ESP32-S3', 'FPGA', 'CAN', 'SPI', 'Battery management']],
+  ['Machine Learning & Vision', ['TensorFlow', 'TensorFlow Lite', 'ONNX', 'YOLO', 'Grounding DINO', 'scikit-learn', 'NumPy']],
+  ['Embedded & Controls', ['C/C++', 'ESP-IDF', 'PROS', 'PID', 'Model Predictive Control', 'Localization', 'Path planning']],
+  ['Languages & Tools', ['Python', 'Java', 'TypeScript', 'Git', 'Linux', 'Onshape', 'Autodesk Inventor']],
 ];
+
+function Tags({ items }) {
+  return (
+    <ul className="tags">
+      {items.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  );
+}
 
 function Project({ project }) {
   const hasMedia = project.image || project.video;
   return (
-    <article className={hasMedia ? 'project has-media' : 'project'}>
-      <div>
-        <h3>
-          {project.href ? <a href={project.href}>{project.title}</a> : project.title}
-        </h3>
-        <p className="meta">{project.meta}</p>
-        <p>{project.summary}</p>
-        <p className="stack">{project.stack}</p>
-      </div>
+    <article className={hasMedia ? 'card project has-media' : 'card project'}>
       {project.image && <img src={project.image} alt={project.alt} loading="lazy" />}
       {project.video && (
         <video src={project.video} poster={project.poster} muted loop controls playsInline preload="none" aria-label={project.alt} />
       )}
+      <div className="project-body">
+        <p className="meta">{project.meta}</p>
+        <h3>{project.title}</h3>
+        {project.award && <p className="award">{project.award}</p>}
+        <p className="summary">{project.summary}</p>
+        <Tags items={project.stack} />
+        {project.href && (
+          <a className="more" href={project.href}>
+            View on GitHub <span aria-hidden="true">→</span>
+          </a>
+        )}
+      </div>
     </article>
   );
 }
@@ -133,31 +149,66 @@ function Project({ project }) {
 function App() {
   return (
     <>
-      <header className="intro">
-        <div>
-          <h1>Josh Roe</h1>
-          <p>
-            Electrical and Computer Engineering student at UC Berkeley, working on machine learning, computer vision, and embedded systems.
-          </p>
-          <p className="links">
-            <a href="mailto:joshroe@berkeley.edu">joshroe@berkeley.edu</a>
-            <a href="https://www.linkedin.com/in/josh-roe/">LinkedIn</a>
-            <a href={GITHUB}>GitHub</a>
-          </p>
+      <header className="hero">
+        <div className="wrap hero-inner">
+          <div>
+            <p className="eyebrow">UC Berkeley · Electrical and Computer Engineering</p>
+            <h1>Josh Roe</h1>
+            <p className="lede">
+              I design PCBs and embedded systems, and build machine learning and computer vision for real hardware.
+            </p>
+            <div className="links">
+              <a className="button primary" href="mailto:joshroe@berkeley.edu">Email me</a>
+              <a className="button" href="https://www.linkedin.com/in/josh-roe/">LinkedIn</a>
+              <a className="button" href={GITHUB}>GitHub</a>
+            </div>
+          </div>
+          <img className="portrait" src="/images/photo.jpg" alt="Josh Roe" width="168" height="168" />
         </div>
-        <img src="/images/photo.jpg" alt="Josh Roe" width="132" height="132" />
       </header>
 
-      <main>
+      <main className="wrap">
         <section>
-          <h2>Projects</h2>
-          {projects.map((project) => (
-            <Project project={project} key={project.title} />
-          ))}
+          <h2><span>01</span> Featured projects</h2>
+          <div className="projects">
+            {projects.map((project) => (
+              <Project project={project} key={project.title} />
+            ))}
+          </div>
         </section>
 
         <section>
-          <h2>Other projects</h2>
+          <h2><span>02</span> Experience</h2>
+          <ol className="timeline">
+            {experience.map((item) => (
+              <li key={item.org}>
+                <div className="job-head">
+                  <h3>
+                    {item.role} <span className="at">·</span>{' '}
+                    {item.href ? <a href={item.href}>{item.org}</a> : item.org}
+                  </h3>
+                  <span className="meta">{item.period}</span>
+                </div>
+                <p>{item.detail}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section>
+          <h2><span>03</span> Skills</h2>
+          <div className="skills">
+            {skills.map(([label, items]) => (
+              <div className="card skill-group" key={label}>
+                <h3>{label}</h3>
+                <Tags items={items} />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2><span>04</span> More on GitHub</h2>
           <ul className="other">
             {otherProjects.map((project) => (
               <li key={project.title}>
@@ -169,42 +220,22 @@ function App() {
         </section>
 
         <section>
-          <h2>Experience</h2>
-          {experience.map((item) => (
-            <article className="job" key={item.org}>
-              <div className="job-head">
-                <h3>
-                  {item.role}, {item.href ? <a href={item.href}>{item.org}</a> : item.org}
-                </h3>
-                <span className="meta">{item.period}</span>
-              </div>
-              <p>{item.detail}</p>
-            </article>
-          ))}
-        </section>
-
-        <section>
-          <h2>Education</h2>
-          <article className="job">
+          <h2><span>05</span> Education</h2>
+          <div className="card edu">
             <div className="job-head">
-              <h3>B.S. Electrical and Computer Engineering, UC Berkeley</h3>
+              <h3>University of California, Berkeley</h3>
               <span className="meta">Expected May 2029</span>
             </div>
-          </article>
-        </section>
-
-        <section>
-          <h2>Skills</h2>
-          <dl className="skills">
-            {skills.map(([label, value]) => (
-              <div key={label}>
-                <dt>{label}</dt>
-                <dd>{value}</dd>
-              </div>
-            ))}
-          </dl>
+            <p>B.S. Electrical and Computer Engineering</p>
+          </div>
         </section>
       </main>
+
+      <footer className="wrap footer">
+        <p>
+          <a href="mailto:joshroe@berkeley.edu">joshroe@berkeley.edu</a> · Berkeley, CA
+        </p>
+      </footer>
     </>
   );
 }
