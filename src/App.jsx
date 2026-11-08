@@ -188,7 +188,7 @@ function App() {
           <article className="job">
             <div className="job-head">
               <h3>B.S. Electrical and Computer Engineering, UC Berkeley</h3>
-              <span className="meta">Expected 2030</span>
+              <span className="meta">Expected May 2029</span>
             </div>
           </article>
         </section>
